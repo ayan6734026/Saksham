@@ -19,12 +19,12 @@
                 <a href="index.html" ><p class="logo_text"><b>Saksham (NDR & Empowerment)</b></p></a>
             </div>
             <div class="nav-right">
-                <a href="index.html">Home <i class="fas fa-home"></i></a>
-                <a href="https://saksham-kohl.vercel.app/">Classroom <i class="fas fa-chalkboard"></i></a>
-                <a href="/simulations_page/simulations.html">Simulations <i class="fas fa-vr-cardboard"></i></a>
-                <a href="/alerts_page/alerts.html">Alerts <i class="fas fa-bell"></i></a>
-                <a href="#">Support <i class="fas fa-hands-helping"></i></a>
-                <a href="emergency_helpline/emergency_Helpline.html">Emergency Helpline <i class="fas fa-phone-alt"></i></a>
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="https://saksham-kohl.vercel.app/"><i class="fas fa-chalkboard"></i>Classroom</a>
+                <a href="/simulations_page/simulations.html"><i class="fas fa-vr-cardboard"></i>Simulations</a>
+                <a href="/alerts_page/alerts.html"><i class="fas fa-bell"></i>Alerts</a>
+                <a href="#"><i class="fas fa-hands-helping"></i>Support</a>
+                <a href="emergency_helpline/emergency_Helpline.html"><i class="fas fa-phone-alt"></i>Emergency Helpline</a>
             </div>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -93,25 +93,7 @@
         </div>
     </section>
 
-    <!-- Chatbot -->
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Saksham Assistant</h3>
-            <button class="chatbot-close"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="chatbot-messages">
-            <div class="message bot-message">
-                <p>Hello! I'm Saksham Assistant. How can I help you with disaster preparedness today?</p>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" placeholder="Type your message here...">
-            <button><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-    <div class="chatbot-icon">
-        <i class="fas fa-robot"></i>
-    </div>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -126,7 +108,7 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <a href="index.html">Home</a>
-                <a href="#">Classroom</a>
+                <a href="https://saksham-kohl.vercel.app/">Classroom</a>
                 <a href="/simulations_page/simulations.html">Simulations</a>
                 <a href="/alerts_page/alerts.html">Alerts</a>
             </div>
@@ -151,8 +133,9 @@
             <p>&copy; 2025 National Disaster Resilience and Saksham. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
-    <script src="chatbot.js"></script>
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="gp_W16HWS_7nP0iGNEdaF";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
 </body>
 </html>

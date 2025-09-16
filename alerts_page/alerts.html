@@ -63,26 +63,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Chatbot -->
-<div class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Saksham Assistant</h3>
-            <button class="chatbot-close"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="chatbot-messages">
-            <div class="message bot-message">
-                <p>Hello! I'm Saksham Assistant. How can I help you with disaster preparedness today?</p>
-            </div>
-        </div>
-        <div class="chatbot-input">
-            <input type="text" placeholder="Type your message here...">
-            <button><i class="fas fa-paper-plane"></i></button>
-        </div>
-    </div>
-    <div class="chatbot-icon">
-        <i class="fas fa-robot"></i>
-    </div>    
+   
 
     <!-- Footer -->
     <footer class="footer">
@@ -119,11 +100,14 @@
             </div>
         </div>
         <div class="footer-bottom" style="text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
-            <p>&copy; 2023 National Disaster Resilience and Saksham. All rights reserved.</p>
+            <p>&copy; 2025 National Disaster Resilience and Saksham. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="/Home_page/script.js"></script>
-    <script src="/Home_page/chatbot.js"></script>
+    
+    <script src="alerts.js"></script>
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="gp_W16HWS_7nP0iGNEdaF";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
 </body>
 </html>
