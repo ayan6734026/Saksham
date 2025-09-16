@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKSHAM - Disaster Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo">SAKSHAM</div>
+            <div class="govt-logo">🇮🇳</div>
+        </div>
+        <div class="header-actions">
+            <a href="login.html" class="login-link">Login / Register</a>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="breadcrumb">
+           Disaster Management » Awareness and Preparedness
+        </div>
+        <ul class="nav-menu">
+            <li onclick="showSection('announcements')">Announcements</li>
+            <li onclick="showSection('about')">About the Course</li>
+            <li onclick="showSection('qa')">Q&A</li>
+            <li onclick="showSection('progress')">Progress</li>
+            <li onclick="showSection('review')">Review Assignment</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <button class="register-btn" onclick="redirectToLogin()">
+                Login to Take Certification Exam
+            </button>
+
+            <div class="course-outline">
+                <h3>Course outline</h3>
+                <div style="margin-bottom: 20px;">
+                    <strong>About SAKSHAM</strong><br>
+                    
+                </div>
+                <ul class="week-list">
+                    <li onclick="showWeek(1)">Module 1 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(1); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(2)">Module 2 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(2); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(3)">Module 3 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(3); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(4)">Module 4 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(4); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(5)">Module 5 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(5); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(6)">Module 6 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(6); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(7)">Module 7 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(7); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(8)">Module 8 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(8); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(9)">Module 9 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(9); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(10)">Module 10 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(10); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                    <li onclick="showWeek(11)">Module 11 :
+                        <div style="margin-left: 15px; font-size: 12px; color: #888; margin-top: 5px;">
+                            <button class="lecture-button" onclick="showLecture(11); event.stopPropagation();">Lecture</button> • <button class="quiz-button" onclick="redirectToLogin(); event.stopPropagation();">Quiz</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="announcement-notice">
+                There are new announcements since your last visit. Please have a look.
+            </div>
+
+            <h1 class="main-title">SAKSHAM courses!</h1>
+            <div class="date">2025-07-28</div>
+
+            <p class="content-text">Welcome to SAKSHAM - India's premier disaster management awareness and certification program.</p>
+            
+            <div class="important-note">
+                <h3>🔔 Important Notice</h3>
+                <p>To access quizzes and earn certification, you must <strong>register and login</strong> to track your progress.</p>
+                <button onclick="redirectToLogin()" style="background-color: #0984e3; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">
+                    Get Started - Login/Register
+                </button>
+            </div>
+
+            <div class="exam-info">
+                <h3>📋 Certification Information</h3>
+                <ul>
+                    <li><strong>Exam Date:</strong> <span class="highlight">October 25, 2025</span></li>
+                    <li><strong>Eligibility:</strong> Complete at least 8 modules with 40%+ average score</li>
+                    <li><strong>Format:</strong> Multiple choice questions from all modules</li>
+                    <li><strong>Duration:</strong> 2 hours</li>
+                    <li><strong>Passing Score:</strong> 60%</li>
+                </ul>
+                <button onclick="showExamCities()" style="background-color: #27ae60; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 15px;">
+                    View Exam Cities
+                </button>
+            </div>
+
+            <div class="note-section">
+                <div class="note-title">NOTE:</div>
+                <p>Please check once if you have >= 40/100 in average assignment score and also participated and satisfied the criteria for certification eligibility.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+
+        function showSection(section) {
+            document.querySelectorAll('.main-content > div:not(.announcement-notice)').forEach(div => {
+                div.style.display = 'none';
+            });
+
+            if (section === 'announcements') {
+                document.querySelector('.announcement-notice').style.display = 'block';
+            } else if (section === 'about') {
+                // Show about content
+            } else if (section === 'quiz') {
+                redirectToLogin();
+            } else if (section === 'progress') {
+                redirectToLogin();
+            } else if (section === 'review') {
+                // Show review content
+            }
+        }
+
+        function showWeek(weekNum) {
+            // Show week information
+        }
+
+        function showLecture(moduleNum) {
+            // Show lecture content
+        }
+
+        function showExamCities() {
+            const cities = [
+                'Mumbai', 'Delhi', 'Bangalore', 'Chennai', 'Kolkata',
+                'Hyderabad', 'Pune', 'Ahmedabad', 'Jaipur', 'Lucknow',
+                'Bhopal', 'Thiruvananthapuram', 'Guwahati', 'Bhubaneswar'
+            ];
+
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modal-body');
+
+            let content = '<h2>Available Exam Cities</h2><ul style="text-align: left; max-height: 300px; overflow-y: auto;">';
+            cities.forEach(city => {
+                content += `<li style="padding: 5px 0;">${city}</li>`;
+            });
+            content += '</ul>';
+
+            modalBody.innerHTML = content;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Add some interactive features
+        document.addEventListener('DOMContentLoaded', function() {
+            // Highlight important dates
+            const dates = document.querySelectorAll('.highlight');
+            dates.forEach(date => {
+                date.addEventListener('mouseover', function() {
+                    this.style.backgroundColor = '#fff3cd';
+                    this.style.padding = '2px 4px';
+                    this.style.borderRadius = '3px';
+                });
+
+                date.addEventListener('mouseout', function() {
+                    this.style.backgroundColor = 'transparent';
+                    this.style.padding = '0';
+                });
+            });
+
+            // Add animation to buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
